@@ -1,0 +1,18 @@
+﻿@model SayHi.Models.PersonModel
+
+@{
+	ViewData["Title"] = "Say Hi: Details";
+}
+
+<h1>Say Hi!</h1>
+
+<h4>Saying Hi!</h4>
+<hr />
+<div class="row">
+	<h2>
+		@Html.DisplayFor(model => model.Greeting)
+	</h2>
+</div>
+<div>
+	<a asp-action="Index">Back to Index</a>
+</div>
